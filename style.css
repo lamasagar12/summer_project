@@ -3,10 +3,6 @@
 * {
     font-family: 'Fira Sans Condensed', sans-serif;
 }
-body {
-    background-color:#ffffff;
-    overflow-x: hidden;
-}
 .login-form {
     position: relative;
     min-height: 80vh;
@@ -20,24 +16,27 @@ body {
 
 .container {
     max-width: 1000px;
+    min-height: 100vh; /* Minimum height of viewport */
+    position: relative;
+    padding-bottom: 50px; 
 }
 .alert{
     text-align: center;
 }
-
-.login-form h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 400;
-    color: #0000a4;
-}
-.login-form h2 {
+.login-form h1  {
     line-height: 40px;
     margin-bottom: 5px;
     font-size: 30px;
     font-weight: 500;
-    color: rgb(1, 38, 139);
+    color: #fff;
+    background-color: #0000a4;
     text-align: center;
+}
+.login-form h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: #0000a4;
 }
 .login-form .main {
     position: relative;
@@ -58,7 +57,7 @@ body {
 }
 
 .form-img img {
-    max-width: 140%;
+    max-width: 100%;
 }
 
 p {
@@ -68,14 +67,14 @@ p {
     text-align: center;
 }
 
-.btn,
+.btn-1,
 button,
 input {
     border-radius: 5px;
     display: inline;
 }
 
-.btn:hover,
+.btn-1:hover,
 button:hover {
     transition: 0.5s ease;
 }
@@ -103,7 +102,7 @@ a{
 
 }
 .login-form input:focus{
-    background:;
+    background:transparent;
     border: 2px solid #4e34b6;
 }
 .login-form button{
@@ -121,4 +120,75 @@ color: #0000a4;
 }
 p.account a:hover{
     text-decoration: underline;
+}
+footer {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: #1d1dd3;
+    font-size: 13px;
+    line-height: 30px;
+}
+.row-1 {
+    width: 89%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.col-1 {
+    flex-basis: 20%;
+    padding: 1px;
+}
+
+.logo-container {
+    display: flex; 
+    align-items: center;
+    border-bottom: 1px solid #f7fafc;
+
+}
+
+.logo1 {
+    width: 70px;
+    height: auto;
+    margin-right: 10px;
+    filter: invert(100%);
+}
+
+.row-1 .col-1 .bajaj {
+    text-decoration: none;
+    font-size: 1.9rem;
+    color: #f7fafc;
+    margin: 0; 
+}
+
+.row-1 .col-1 .pandu {
+    color: #f7fafc;
+    margin: 1;
+    font-size: 0.7rem;
+    padding: 1;
+    text-align: start;
+}
+.col-1 .showroom{
+    color: #f7fafc;
+    width:fit-content;
+    margin-bottom: 15px;
+    position: relative;
+}
+.col-1 .number{
+    color: #f7fafc;
+}
+.email-id{
+    width:fit-content;
+    border-bottom: 1px solid #f7fafc;
+}
+.social-icons .fa-brands{
+    width:50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+
 }
